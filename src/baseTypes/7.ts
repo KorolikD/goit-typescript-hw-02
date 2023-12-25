@@ -14,10 +14,10 @@
 //   sunday,
 // }
 
-// const isWeekend = (day: string): boolean => {
-//   const optimizedDay = day.toLocaleLowerCase().trim();
-//   return DaysOfWeek[DaysOfWeek.saturday] === optimizedDay ||
-//     DaysOfWeek[DaysOfWeek.sunday] === optimizedDay
+// const isWeekend = (dayOfWeek: string): boolean => {
+//   const optimizedDayOfWeek = dayOfWeek.toLocaleLowerCase().trim();
+//   return DaysOfWeek[DaysOfWeek.saturday] === optimizedDayOfWeek ||
+//     DaysOfWeek[DaysOfWeek.sunday] === optimizedDayOfWeek
 //     ? true
 //     : false;
 // };
@@ -33,10 +33,10 @@ enum DaysOfWeek {
   sunday = "sunday",
 }
 
-const isWeekend = (day: string): boolean => {
-  const optimizedDay = day.toLocaleLowerCase().trim();
-  return DaysOfWeek.saturday === optimizedDay ||
-    DaysOfWeek.sunday === optimizedDay
+const isWeekend = (dayOfWeek: string): boolean => {
+  const optimizedDayOfWeek = dayOfWeek.toLocaleLowerCase().trim();
+  return DaysOfWeek.saturday === optimizedDayOfWeek ||
+    DaysOfWeek.sunday === optimizedDayOfWeek
     ? true
     : false;
 };
